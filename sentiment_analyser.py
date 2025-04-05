@@ -49,4 +49,4 @@ results_df = pd.DataFrame(res).T
 results_df = results_df.reset_index().rename(columns = {'index': 'ID'})
 results_df = results_df.merge(df, how = 'left')
 
-results_df.head()
+print(results_df.head())
